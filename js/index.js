@@ -6,6 +6,7 @@ const data = await request.json();
 const main = document.getElementById("main");
 data.forEach((planet) => {
   const article = document.createElement("article");
+  article.id = planet.id;
   article.innerHTML = `
    <h2 class="planet-name">${planet.name}</h2>
   <h3 class="planet-position">${planet.position}</h3>
