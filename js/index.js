@@ -23,17 +23,12 @@ data.forEach((planet) => {
       <p>${planet.facts.rotation_time}</p>
       <p>${planet.facts.orbit_time}</p>
     </div>
-    <div>
-      unique features
-      <h4></h4>
-      <p></p>
-      atmosphere
-      <p></p>
-      temp
-      <p></p>
-      moons
-      <p></p>
-      special features
+    <div class="unique-features">
+      <h4 class="unique-features-header">Unique Features</h4>
+      <p>${planet.unique_features.atmosphere}</p>
+      <p>${planet.unique_features.temperature}</p>
+      <p>${planet.unique_features.moons}</p>
+      <p>${planet.unique_features.special_features}</p>
     </div>
     <div>
       <h4></h4>
