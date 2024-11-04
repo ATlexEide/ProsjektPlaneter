@@ -30,14 +30,12 @@ data.forEach((planet) => {
       <p>${planet.unique_features.moons}</p>
       <p>${planet.unique_features.special_features}</p>
     </div>
-    <div>
-      <h4></h4>
-      <p></p>
-      comparisons
-      <p></p>
-      trivia
-      <ul></ul>
-      space missions
+    <div class="trivia">
+      <h4 class="trivia-header">Trivia</h4>
+      <p>${planet.comparisons}</p>
+      <p>${planet.trivia}</p>
+      <label for="space-missions-${planet.id}" class="space-missions-label"></label>
+      <ul class="space-missions" id="space-missions-${planet.id}"></ul>
     </div>
   </section>
   `;
