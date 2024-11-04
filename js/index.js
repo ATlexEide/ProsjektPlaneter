@@ -3,10 +3,16 @@
 const request = await fetch("./data.json");
 const data = await request.json();
 
+///////
+// Select main container
 const main = document.getElementById("main");
+///////
+// Loop through each planet in the json file and write html for it
 data.forEach((planet) => {
   const article = document.createElement("article");
   article.id = planet.id;
+  // Using innerHTML instead of creating each element
+  // individually to keep it simple and readable
   article.innerHTML = `
    <h2 class="planet-name">${planet.name}</h2>
   <h3 class="planet-position">${planet.position}</h3>
@@ -38,9 +44,14 @@ data.forEach((planet) => {
     </div>
   </section>
   `;
+  ////////
+  // Add card to main container
   main.appendChild(article);
   const trivia = document.getElementById(`trivia-${planet.id}`);
   const spaceMissions = planet.history.space_missions;
+  ////////
+  // If the list for space missions to the planet
+  // has any info, make a list item and add to trivia section
   if (spaceMissions.length > 0) {
     const label = document.createElement("label");
     label.for = `space-missions-${planet.id}`;
@@ -57,5 +68,4 @@ data.forEach((planet) => {
     });
     trivia.appendChild(ul);
   }
-  console.log(planet.name);
 });
