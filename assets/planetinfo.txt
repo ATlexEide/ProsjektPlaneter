@@ -1,0 +1,312 @@
+Mercury
+Name:
+Mercury
+
+Position:
+Position: 1st planet from the Sun
+
+Facts:
+
+Diameter: 4,879 km
+Mass: 3.30 x 10^23 kg
+Gravity: 3.7 m/s²
+Distance from Sun: 57.9 million km
+Rotation Time: 59 Earth days
+Orbit Time: 88 Earth days
+Visual Elements:
+
+Image of Mercury
+Size comparison and distance visuals
+Unique Features:
+
+Atmosphere: Thin, mainly oxygen, sodium, hydrogen
+Temperature: -173 to 427°C
+Moons: None
+Special Features: Heavily cratered surface, large iron core
+History:
+
+Discovery: Known since ancient times
+Space Missions: Mariner 10, MESSENGER
+Interactive Content:
+
+Take the Mercury Quiz
+Interactive orbit simulation
+Comparisons:
+
+Smallest planet, closest to the Sun
+Trivia:
+
+Mercury's day is longer than its year!
+Venus
+Name:
+Venus
+
+Position:
+Position: 2nd planet from the Sun
+
+Facts:
+
+Diameter: 12,104 km
+Mass: 4.87 x 10^24 kg
+Gravity: 8.87 m/s²
+Distance from Sun: 108.2 million km
+Rotation Time: 243 Earth days (retrograde rotation)
+Orbit Time: 225 Earth days
+Visual Elements:
+
+Image of Venus
+Dense atmosphere visuals
+Unique Features:
+
+Atmosphere: Thick, mostly carbon dioxide with clouds of sulfuric acid
+Temperature: 462°C (hottest planet)
+Moons: None
+Special Features: Surface covered with volcanoes, thick clouds trap heat
+History:
+
+Discovery: Known since ancient times
+Space Missions: Venera, Magellan, Akatsuki
+Interactive Content:
+
+Take the Venus Quiz
+Atmospheric simulation
+Comparisons:
+
+Similar size to Earth, hottest planet
+Trivia:
+
+Venus rotates in the opposite direction of most planets!
+Earth
+Name:
+Earth
+
+Position:
+Position: 3rd planet from the Sun
+
+Facts:
+
+Diameter: 12,742 km
+Mass: 5.97 x 10^24 kg
+Gravity: 9.81 m/s²
+Distance from Sun: 149.6 million km
+Rotation Time: 24 hours
+Orbit Time: 365.25 days
+Visual Elements:
+
+Image of Earth
+Blue planet visuals
+Unique Features:
+
+Atmosphere: Nitrogen, oxygen-rich
+Temperature: Average 14°C
+Moons: 1 (Moon)
+Special Features: Only planet known to support life
+History:
+
+Discovery: Known since ancient times
+Space Missions: Numerous Earth observation missions
+Interactive Content:
+
+Earth Quiz
+Climate and weather simulations
+Comparisons:
+
+Only planet with liquid water on the surface
+Trivia:
+
+Earth's orbit is nearly circular!
+Mars
+Name:
+Mars
+
+Position:
+Position: 4th planet from the Sun
+
+Facts:
+
+Diameter: 6,779 km
+Mass: 6.42 x 10^23 kg
+Gravity: 3.71 m/s²
+Distance from Sun: 227.9 million km
+Rotation Time: 24.6 hours
+Orbit Time: 687 Earth days
+Visual Elements:
+
+Image of Mars
+Red planet visuals
+Unique Features:
+
+Atmosphere: Thin, mostly carbon dioxide
+Temperature: -63°C average
+Moons: 2 (Phobos, Deimos)
+Special Features: Largest volcano (Olympus Mons), evidence of water
+History:
+
+Discovery: Known since ancient times
+Space Missions: Viking, Curiosity, Perseverance
+Interactive Content:
+
+Mars Quiz
+Rover simulation
+Comparisons:
+
+Half the size of Earth, cold desert planet
+Trivia:
+
+Mars has the tallest volcano in the solar system!
+Jupiter
+Name:
+Jupiter
+
+Position:
+Position: 5th planet from the Sun
+
+Facts:
+
+Diameter: 139,820 km
+Mass: 1.90 x 10^27 kg
+Gravity: 24.79 m/s²
+Distance from Sun: 778.5 million km
+Rotation Time: 9.9 hours
+Orbit Time: 11.86 Earth years
+Visual Elements:
+
+Image of Jupiter
+Great Red Spot visuals
+Unique Features:
+
+Atmosphere: Mostly hydrogen and helium
+Temperature: -108°C average
+Moons: 79 (including Ganymede, Io, Europa, Callisto)
+Special Features: Great Red Spot, powerful magnetic field
+History:
+
+Discovery: Known since ancient times
+Space Missions: Pioneer, Voyager, Juno
+Interactive Content:
+
+Jupiter Quiz
+Storm simulation
+Comparisons:
+
+Largest planet, gas giant
+Trivia:
+
+Jupiter's Great Red Spot is a massive storm!
+Saturn
+Name:
+Saturn
+
+Position:
+Position: 6th planet from the Sun
+
+Facts:
+
+Diameter: 116,460 km
+Mass: 5.68 x 10^26 kg
+Gravity: 10.44 m/s²
+Distance from Sun: 1.43 billion km
+Rotation Time: 10.7 hours
+Orbit Time: 29.46 Earth years
+Visual Elements:
+
+Image of Saturn
+Ring system visuals
+Unique Features:
+
+Atmosphere: Mostly hydrogen and helium
+Temperature: -139°C average
+Moons: 83 (including Titan, Enceladus)
+Special Features: Spectacular ring system, icy moons
+History:
+
+Discovery: Known since ancient times
+Space Missions: Cassini, Voyager
+Interactive Content:
+
+Saturn Quiz
+Ring dynamics simulation
+Comparisons:
+
+Second-largest planet, gas giant
+Trivia:
+
+Saturn could float in water due to its low density!
+Uranus
+Name:
+Uranus
+
+Position:
+Position: 7th planet from the Sun
+
+Facts:
+
+Diameter: 50,724 km
+Mass: 8.68 x 10^25 kg
+Gravity: 8.69 m/s²
+Distance from Sun: 2.87 billion km
+Rotation Time: 17.2 hours (retrograde rotation)
+Orbit Time: 84 Earth years
+Visual Elements:
+
+Image of Uranus
+Tilted axis visuals
+Unique Features:
+
+Atmosphere: Hydrogen, helium, methane
+Temperature: -195°C average
+Moons: 27 (including Miranda, Titania)
+Special Features: Rotates on its side, faint ring system
+History:
+
+Discovery: 1781 by William Herschel
+Space Missions: Voyager 2
+Interactive Content:
+
+Uranus Quiz
+Orbit and tilt simulation
+Comparisons:
+
+Ice giant, tilted rotation
+Trivia:
+
+Uranus rotates almost sideways!
+Neptune
+Name:
+Neptune
+
+Position:
+Position: 8th planet from the Sun
+
+Facts:
+
+Diameter: 49,244 km
+Mass: 1.02 x 10^26 kg
+Gravity: 11.15 m/s²
+Distance from Sun: 4.50 billion km
+Rotation Time: 16.1 hours
+Orbit Time: 164.8 Earth years
+Visual Elements:
+
+Image of Neptune
+Deep blue color visuals
+Unique Features:
+
+Atmosphere: Hydrogen, helium, methane
+Temperature: -201°C average
+Moons: 14 (including Triton)
+Special Features: Fastest winds, Great Dark Spot
+History:
+
+Discovery: 1846 by Johann Galle
+Space Missions: Voyager 2
+Interactive Content:
+
+Neptune Quiz
+Wind dynamics simulation
+Comparisons:
+
+Ice giant, farthest planet
+Trivia:
+
+Neptune has the fastest winds in the solar system!
