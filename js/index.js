@@ -40,4 +40,5 @@ data.forEach((planet) => {
   </section>
   `;
   console.log(planet.name);
+  main.appendChild(article);
 });
