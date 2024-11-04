@@ -13,7 +13,7 @@
         "orbit_time": "88 Earth days"
       },
       "visuals": {
-        "image": "./1mercury.png",
+        "image": "./images/planets/1mercury.png",
         "description": "Size comparison and distance visuals"
       },
       "unique_features": {
@@ -46,7 +46,7 @@
         "orbit_time": "225 Earth days"
       },
       "visuals": {
-        "image": "./2venus.png",
+        "image": "./images/planets/2venus.png",
         "description": "Dense atmosphere visuals"
       },
       "unique_features": {
@@ -79,7 +79,7 @@
         "orbit_time": "365.25 days"
       },
       "visuals": {
-        "image": "./3earth.png",
+        "image": "./images/planets/3earth.png",
         "description": "Blue planet visuals"
       },
       "unique_features": {
@@ -112,7 +112,7 @@
         "orbit_time": "687 Earth days"
       },
       "visuals": {
-        "image": "./4mars.png",
+        "image": "./images/planets/4mars.png",
         "description": "Red planet visuals"
       },
       "unique_features": {
@@ -145,7 +145,7 @@
         "orbit_time": "11.86 Earth years"
       },
       "visuals": {
-        "image": "./5jupiter.png",
+        "image": "./images/planets/5jupiter.png",
         "description": "Great Red Spot visuals"
       },
       "unique_features": {
@@ -178,7 +178,7 @@
         "orbit_time": "29.46 Earth years"
       },
       "visuals": {
-        "image": "./6saturn.png",
+        "image": "./images/planets/6saturn.png",
         "description": "Ring system visuals"
       },
       "unique_features": {
@@ -211,7 +211,7 @@
         "orbit_time": "84 Earth years"
       },
       "visuals": {
-        "image": "./7uranus.png",
+        "image": "./images/planets/7uranus.png",
         "description": "Tilted axis visuals"
       },
       "unique_features": {
@@ -244,7 +244,7 @@
         "orbit_time": "164.8 Earth years"
       },
       "visuals": {
-        "image": "./8neptune.png",
+        "image": "./images/planets/8neptune.png",
         "description": "Deep blue color visuals"
       },
       "unique_features": {
