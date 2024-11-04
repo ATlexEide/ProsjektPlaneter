@@ -1,0 +1,268 @@
+{
+  "planets": [
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "position": "1st planet from the Sun",
+      "facts": {
+        "diameter": "4,879 km",
+        "mass": "3.30 x 10^23 kg",
+        "gravity": "3.7 m/s²",
+        "distance_from_sun": "57.9 million km",
+        "rotation_time": "59 Earth days",
+        "orbit_time": "88 Earth days"
+      },
+      "visuals": {
+        "image": "./1mercury.png",
+        "description": "Size comparison and distance visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Thin, mainly oxygen, sodium, hydrogen",
+        "temperature": "-173 to 427°C",
+        "moons": "None",
+        "special_features": "Heavily cratered surface, large iron core"
+      },
+      "history": {
+        "discovery": "Known since ancient times",
+        "space_missions": ["Mariner 10", "MESSENGER"]
+      },
+      "interactive": {
+        "quiz": "quiz.html",
+        "simulation": "Interactive orbit simulation"
+      },
+      "comparisons": "Smallest planet, closest to the Sun",
+      "trivia": "Mercury's day is longer than its year!"
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "position": "2nd planet from the Sun",
+      "facts": {
+        "diameter": "12,104 km",
+        "mass": "4.87 x 10^24 kg",
+        "gravity": "8.87 m/s²",
+        "distance_from_sun": "108.2 million km",
+        "rotation_time": "243 Earth days (retrograde rotation)",
+        "orbit_time": "225 Earth days"
+      },
+      "visuals": {
+        "image": "./2venus.png",
+        "description": "Dense atmosphere visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Thick, mostly carbon dioxide with clouds of sulfuric acid",
+        "temperature": "462°C",
+        "moons": "None",
+        "special_features": "Surface covered with volcanoes, thick clouds trap heat"
+      },
+      "history": {
+        "discovery": "Known since ancient times",
+        "space_missions": ["Venera", "Magellan", "Akatsuki"]
+      },
+      "interactive": {
+        "quiz": "venus_quiz.html",
+        "simulation": "Atmospheric simulation"
+      },
+      "comparisons": "Similar size to Earth, hottest planet",
+      "trivia": "Venus rotates in the opposite direction of most planets!"
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "position": "3rd planet from the Sun",
+      "facts": {
+        "diameter": "12,742 km",
+        "mass": "5.97 x 10^24 kg",
+        "gravity": "9.81 m/s²",
+        "distance_from_sun": "149.6 million km",
+        "rotation_time": "24 hours",
+        "orbit_time": "365.25 days"
+      },
+      "visuals": {
+        "image": "./3earth.png",
+        "description": "Blue planet visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Nitrogen, oxygen-rich",
+        "temperature": "Average 14°C",
+        "moons": "1 (Moon)",
+        "special_features": "Only planet known to support life"
+      },
+      "history": {
+        "discovery": "Known since ancient times",
+        "space_missions": ["Numerous Earth observation missions"]
+      },
+      "interactive": {
+        "quiz": "earth_quiz.html",
+        "simulation": "Climate and weather simulations"
+      },
+      "comparisons": "Only planet with liquid water on the surface",
+      "trivia": "Earth's orbit is nearly circular!"
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "position": "4th planet from the Sun",
+      "facts": {
+        "diameter": "6,779 km",
+        "mass": "6.42 x 10^23 kg",
+        "gravity": "3.71 m/s²",
+        "distance_from_sun": "227.9 million km",
+        "rotation_time": "24.6 hours",
+        "orbit_time": "687 Earth days"
+      },
+      "visuals": {
+        "image": "./4mars.png",
+        "description": "Red planet visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Thin, mostly carbon dioxide",
+        "temperature": "-63°C average",
+        "moons": "2 (Phobos, Deimos)",
+        "special_features": "Largest volcano (Olympus Mons), evidence of water"
+      },
+      "history": {
+        "discovery": "Known since ancient times",
+        "space_missions": ["Viking", "Curiosity", "Perseverance"]
+      },
+      "interactive": {
+        "quiz": "mars_quiz.html",
+        "simulation": "Rover simulation"
+      },
+      "comparisons": "Half the size of Earth, cold desert planet",
+      "trivia": "Mars has the tallest volcano in the solar system!"
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "position": "5th planet from the Sun",
+      "facts": {
+        "diameter": "139,820 km",
+        "mass": "1.90 x 10^27 kg",
+        "gravity": "24.79 m/s²",
+        "distance_from_sun": "778.5 million km",
+        "rotation_time": "9.9 hours",
+        "orbit_time": "11.86 Earth years"
+      },
+      "visuals": {
+        "image": "./5jupiter.png",
+        "description": "Great Red Spot visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Mostly hydrogen and helium",
+        "temperature": "-108°C average",
+        "moons": "79 (including Ganymede, Io, Europa, Callisto)",
+        "special_features": "Great Red Spot, powerful magnetic field"
+      },
+      "history": {
+        "discovery": "Known since ancient times",
+        "space_missions": ["Pioneer", "Voyager", "Juno"]
+      },
+      "interactive": {
+        "quiz": "jupiter_quiz.html",
+        "simulation": "Storm simulation"
+      },
+      "comparisons": "Largest planet, gas giant",
+      "trivia": "Jupiter's Great Red Spot is a massive storm!"
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "position": "6th planet from the Sun",
+      "facts": {
+        "diameter": "116,460 km",
+        "mass": "5.68 x 10^26 kg",
+        "gravity": "10.44 m/s²",
+        "distance_from_sun": "1.43 billion km",
+        "rotation_time": "10.7 hours",
+        "orbit_time": "29.46 Earth years"
+      },
+      "visuals": {
+        "image": "./6saturn.png",
+        "description": "Ring system visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Mostly hydrogen and helium",
+        "temperature": "-139°C average",
+        "moons": "83 (including Titan, Enceladus)",
+        "special_features": "Spectacular ring system, icy moons"
+      },
+      "history": {
+        "discovery": "Known since ancient times",
+        "space_missions": ["Cassini", "Voyager"]
+      },
+      "interactive": {
+        "quiz": "saturn_quiz.html",
+        "simulation": "Ring dynamics simulation"
+      },
+      "comparisons": "Second-largest planet, gas giant",
+      "trivia": "Saturn could float in water due to its low density!"
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "position": "7th planet from the Sun",
+      "facts": {
+        "diameter": "50,724 km",
+        "mass": "8.68 x 10^25 kg",
+        "gravity": "8.69 m/s²",
+        "distance_from_sun": "2.87 billion km",
+        "rotation_time": "17.2 hours (retrograde rotation)",
+        "orbit_time": "84 Earth years"
+      },
+      "visuals": {
+        "image": "./7uranus.png",
+        "description": "Tilted axis visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Hydrogen, helium, methane",
+        "temperature": "-195°C average",
+        "moons": "27 (including Miranda, Titania)",
+        "special_features": "Rotates on its side, faint ring system"
+      },
+      "history": {
+        "discovery": "1781 by William Herschel",
+        "space_missions": ["Voyager 2"]
+      },
+      "interactive": {
+        "quiz": "uranus_quiz.html",
+        "simulation": "Orbit and tilt simulation"
+      },
+      "comparisons": "Ice giant, tilted rotation",
+      "trivia": "Uranus rotates almost sideways!"
+    },
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "position": "8th planet from the Sun",
+      "facts": {
+        "diameter": "49,244 km",
+        "mass": "1.02 x 10^26 kg",
+        "gravity": "11.15 m/s²",
+        "distance_from_sun": "4.50 billion km",
+        "rotation_time": "16.1 hours",
+        "orbit_time": "164.8 Earth years"
+      },
+      "visuals": {
+        "image": "./8neptune.png",
+        "description": "Deep blue color visuals"
+      },
+      "unique_features": {
+        "atmosphere": "Hydrogen, helium, methane",
+        "temperature": "-201°C average",
+        "moons": "14 (including Triton)",
+        "special_features": "Fastest winds, Great Dark Spot"
+      },
+      "history": {
+        "discovery": "1846 by Johann Galle",
+        "space_missions": ["Voyager 2"]
+      },
+      "interactive": {
+        "quiz": "neptune_quiz.html",
+        "simulation": "Wind dynamics simulation"
+      },
+      "comparisons": "Ice giant, farthest planet",
+      "trivia": "Neptune has the fastest winds in the solar system!"
+    }
+  ]
+}
