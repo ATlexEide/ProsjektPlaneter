@@ -68,5 +68,4 @@ data.forEach((planet) => {
     });
     trivia.appendChild(ul);
   }
-  console.log(planet.name);
 });
