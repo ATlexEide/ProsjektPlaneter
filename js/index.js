@@ -16,24 +16,24 @@ data.forEach((planet) => {
   <section class="information">
     <div class="facts">
       <h4 class="facts-header">Facts</h4>
-      <p>${planet.facts.diameter}</p>
-      <p>${planet.facts.mass}</p>
-      <p>${planet.facts.gravity}</p>
-      <p>${planet.facts.distance_from_sun}</p>
-      <p>${planet.facts.rotation_time}</p>
-      <p>${planet.facts.orbit_time}</p>
+      <p>Diameter: ${planet.facts.diameter}</p>
+      <p>Mass: ${planet.facts.mass}</p>
+      <p>Gravity: ${planet.facts.gravity}</p>
+      <p>Distance from the sun: ${planet.facts.distance_from_sun}</p>
+      <p>Rotation time: ${planet.facts.rotation_time}</p>
+      <p>Orbit time: ${planet.facts.orbit_time}</p>
     </div>
     <div class="unique-features">
       <h4 class="unique-features-header">Unique Features</h4>
-      <p>${planet.unique_features.atmosphere}</p>
-      <p>${planet.unique_features.temperature}</p>
-      <p>${planet.unique_features.moons}</p>
-      <p>${planet.unique_features.special_features}</p>
+      <p>Atmosphere: ${planet.unique_features.atmosphere}</p>
+      <p>Temperature: ${planet.unique_features.temperature}</p>
+      <p>Moons: ${planet.unique_features.moons}</p>
+      <p>Special features: ${planet.unique_features.special_features}</p>
     </div>
     <div class="trivia">
       <h4 class="trivia-header">Trivia</h4>
-      <p>${planet.comparisons}</p>
-      <p>${planet.trivia}</p>
+      <p>Comparison: ${planet.comparisons}</p>
+      <p>Fun fact: ${planet.trivia}</p>
       <label for="space-missions-${planet.id}" class="space-missions-label"></label>
       <ul class="space-missions" id="space-missions-${planet.id}"></ul>
     </div>
