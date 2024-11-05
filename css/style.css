@@ -6,4 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  /* Temporary */
+  width: 100vw;
+}
+/* Header and Nav Bar */
+header {
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
