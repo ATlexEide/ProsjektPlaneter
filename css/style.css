@@ -1,5 +1,5 @@
 :root {
-  --placeholder: 0;
+  --header-height: 3em;
 }
 * {
   margin: 0;
@@ -13,12 +13,21 @@ img {
 }
 /* Header and Nav Bar */
 header {
+  position: sticky;
   width: 100vw;
-  height: 2rem;
+  height: var(--header-height);
   display: flex;
-  justify-content: space-between;
   padding: 1em;
+  justify-content: space-between;
+  align-items: center;
 }
 nav {
   display: flex;
+  height: var(--header-height);
+  display: flex;
+}
+#hamburger-menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2em;
 }
