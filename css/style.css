@@ -51,7 +51,7 @@ nav {
   justify-content: space-evenly;
   padding: var(--header-height);
 }
-#planet-links[hidden] {
+#planet-link-menu[hidden] {
   display: none;
 }
 .noscroll {
