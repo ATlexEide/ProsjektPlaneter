@@ -70,19 +70,25 @@ data.forEach((planet) => {
   }
 });
 
-const planetLinks = document.getElementById("planet-links");
+const planetLinks = document.getElementById("planet-link-menu");
 const toggleBtn = document.getElementById("hamburger-menu-toggle");
 const icon = document.getElementById("hamburger-icon");
 toggleBtn.addEventListener("click", () => {
   if (planetLinks.hidden) {
-    planetLinks.removeAttribute("hidden");
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-xmark");
-    document.body.classList.add("noscroll");
+    openMenu();
   } else {
-    planetLinks.setAttribute("hidden", true);
-    icon.classList.remove("fa-xmark");
-    icon.classList.add("fa-bars");
-    document.body.classList.remove("noscroll");
+    closeMenu();
   }
 });
+function openMenu() {
+  planetLinks.removeAttribute("hidden");
+  icon.classList.remove("fa-bars");
+  icon.classList.add("fa-xmark");
+  document.body.classList.add("noscroll");
+}
+function closeMenu() {
+  planetLinks.setAttribute("hidden", true);
+  icon.classList.remove("fa-xmark");
+  icon.classList.add("fa-bars");
+  document.body.classList.remove("noscroll");
+}
