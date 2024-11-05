@@ -76,7 +76,13 @@ const icon = document.getElementById("hamburger-icon");
 toggleBtn.addEventListener("click", () => {
   if (planetLinks.hidden) {
     planetLinks.removeAttribute("hidden");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+    document.body.classList.add("noscroll");
   } else {
     planetLinks.setAttribute("hidden", true);
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+    document.body.classList.remove("noscroll");
   }
 });
