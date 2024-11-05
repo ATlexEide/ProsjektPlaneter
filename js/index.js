@@ -70,12 +70,32 @@ data.forEach((planet) => {
   }
 });
 
-const planetLinks = document.getElementById("planet-links");
-const linkToggle = document.getElementById("hamburger-menu-toggle");
-linkToggle.addEventListener("click", () => {
-  if (planetLinks.hidden) {
-    planetLinks.removeAttribute("hidden");
+const menu = document.getElementById("planet-link-menu");
+const planetLinks = document.querySelectorAll(".planet-link");
+const toggleBtn = document.getElementById("hamburger-menu-toggle");
+const icon = document.getElementById("hamburger-icon");
+console.log(planetLinks);
+planetLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
+});
+toggleBtn.addEventListener("click", () => {
+  if (menu.hidden) {
+    openMenu();
   } else {
-    planetLinks.setAttribute("hidden", true);
+    closeMenu();
   }
 });
+function openMenu() {
+  menu.removeAttribute("hidden");
+  icon.classList.remove("fa-bars");
+  icon.classList.add("fa-xmark");
+  document.body.classList.add("noscroll");
+}
+function closeMenu() {
+  menu.setAttribute("hidden", true);
+  icon.classList.remove("fa-xmark");
+  icon.classList.add("fa-bars");
+  document.body.classList.remove("noscroll");
+}
