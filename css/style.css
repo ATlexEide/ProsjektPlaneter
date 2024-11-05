@@ -7,10 +7,15 @@
   box-sizing: border-box;
   list-style: none;
 }
-img {
-  /* Temporary */
-  width: 100px;
+
+html {
+  font-family: Montserrat, sans-serif;
+  background: url(../assets/images/background/pexels-apasaric-1694000.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  color: hsla(347, 15%, 68%, 1);
 }
+
 /* Header and Nav Bar */
 header {
   width: 100vw;
@@ -21,4 +26,37 @@ header {
 }
 nav {
   display: flex;
+}
+
+img {
+  max-height: 15rem;
+  width: auto;
+  padding: 2em 0em 2em 0em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  font-size: 0.8rem;
+  min-height: 100svh;
+}
+
+/* Headings */
+
+h2 {
+  font-size: 3rem;
+  color: hsla(266, 53%, 94%, 1);
+  letter-spacing: 0.2em;
+}
+
+h4,
+h5 {
+  margin-top: 1em;
+}
+
+p {
+  width: 90%;
 }
