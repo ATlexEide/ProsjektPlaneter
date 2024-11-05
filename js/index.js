@@ -69,3 +69,13 @@ data.forEach((planet) => {
     trivia.appendChild(ul);
   }
 });
+
+const planetLinks = document.getElementById("planet-links");
+const linkToggle = document.getElementById("hamburger-menu-toggle");
+linkToggle.addEventListener("click", () => {
+  if (planetLinks.hidden) {
+    planetLinks.removeAttribute("hidden");
+  } else {
+    planetLinks.setAttribute("hidden", true);
+  }
+});
