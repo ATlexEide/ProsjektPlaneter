@@ -13,7 +13,7 @@ img {
 }
 /* Header and Nav Bar */
 header {
-  position: sticky;
+  position: fixed;
   width: 100vw;
   height: var(--header-height);
   display: flex;
@@ -27,7 +27,17 @@ nav {
   display: flex;
 }
 #hamburger-menu-toggle {
+  z-index: 1;
   background: none;
   border: none;
   font-size: 2em;
+}
+#planet-links {
+  /* Position and display as a kinda modal */
+  position: fixed;
+  width: 100vw;
+  height: 100svh;
+  top: 0;
+  left: 0;
+  border: solid 1px blue;
 }
