@@ -56,7 +56,7 @@ nav {
   flex-direction: column;
   /* align-self: center; */
   justify-content: space-evenly;
-  padding: var(--header-height);
+  transform: translateX();
 }
 #planet-link-menu[hidden] {
   transform: translateX();
