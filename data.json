@@ -13,7 +13,7 @@
     },
     "visuals": {
       "source_url": "https://en.wikipedia.org/wiki/Mercury_(planet)#/media/File:Mercury_in_true_color.jpg",
-      "img_licence": "Public domain"
+      "img_licence": "Public domain",
       "image": "./assets/images/planets-nobg/mercury.png",
       "description": "Size comparison and distance visuals"
     },
@@ -32,7 +32,7 @@
       "simulation": "Interactive orbit simulation"
     },
     "comparisons": "Smallest planet, closest to the Sun",
-    "trivia": "Mercury's day is longer than its year!" 
+    "trivia": "Mercury's day is longer than its year!"
   },
   {
     "id": "venus",
@@ -48,7 +48,7 @@
     },
     "visuals": {
       "source_url": "https://en.wikipedia.org/wiki/Venus#/media/File:Venus_-_December_23_2016.png",
-      "img_licence": "CC BY 2.0"
+      "img_licence": "CC BY 2.0",
       "image": "./assets/images/planets-nobg/venus.png",
       "description": "Dense atmosphere visuals"
     },
