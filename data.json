@@ -12,6 +12,8 @@
       "orbit_time": "88 Earth days"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Mercury_(planet)#/media/File:Mercury_in_true_color.jpg",
+      "img_licence": "Public domain"
       "image": "./assets/images/planets-nobg/mercury.png",
       "description": "Size comparison and distance visuals"
     },
@@ -30,7 +32,7 @@
       "simulation": "Interactive orbit simulation"
     },
     "comparisons": "Smallest planet, closest to the Sun",
-    "trivia": "Mercury's day is longer than its year!"
+    "trivia": "Mercury's day is longer than its year!" 
   },
   {
     "id": "venus",
@@ -45,6 +47,8 @@
       "orbit_time": "225 Earth days"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Venus#/media/File:Venus_-_December_23_2016.png",
+      "img_licence": "CC BY 2.0"
       "image": "./assets/images/planets-nobg/venus.png",
       "description": "Dense atmosphere visuals"
     },
@@ -78,6 +82,8 @@
       "orbit_time": "365.25 days"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Earth#/media/File:The_Earth_seen_from_Apollo_17.jpg",
+      "img_licence": "Public domain",
       "image": "./assets/images/planets-nobg/earth.png",
       "description": "Blue planet visuals"
     },
@@ -111,6 +117,8 @@
       "orbit_time": "687 Earth days"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Mars#/media/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png",
+      "img_licence": "CC BY 2.0",
       "image": "./assets/images/planets-nobg/mars.png",
       "description": "Red planet visuals"
     },
@@ -144,6 +152,8 @@
       "orbit_time": "11.86 Earth years"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Jupiter#/media/File:Jupiter_and_its_shrunken_Great_Red_Spot.jpg",
+      "img_licence": "Public domain",
       "image": "./assets/images/planets-nobg/jupiter.png",
       "description": "Great Red Spot visuals"
     },
@@ -177,6 +187,8 @@
       "orbit_time": "29.46 Earth years"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Saturn#/media/File:Saturn_during_Equinox.jpg",
+      "img_licence": "Public domain",
       "image": "./assets/images/planets-nobg/saturn.png",
       "description": "Ring system visuals"
     },
@@ -210,6 +222,8 @@
       "orbit_time": "84 Earth years"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Uranus#/media/File:Uranus_Voyager2_color_calibrated.png",
+      "img_licence": "CC0 1.0",
       "image": "./assets/images/planets-nobg/uranus.png",
       "description": "Tilted axis visuals"
     },
@@ -243,6 +257,8 @@
       "orbit_time": "164.8 Earth years"
     },
     "visuals": {
+      "source_url": "https://en.wikipedia.org/wiki/Neptune#/media/File:Neptune_Voyager2_color_calibrated.png",
+      "img_licence": "CC0 1.0",
       "image": "./assets/images/planets-nobg/neptune.png",
       "description": "Deep blue color visuals"
     },
