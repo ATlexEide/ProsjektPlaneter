@@ -74,13 +74,9 @@ main {
 }
 
 .planet-image {
-  /* width: 200px; */
   height: 200px;
   border-radius: 10px;
   margin: 50px auto;
-  position: relative;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease;
   animation: levitate 3s ease-in-out infinite;
 }
 
@@ -111,10 +107,10 @@ body {
   scroll-behavior: smooth;
   min-height: 100svh;
 }
-ul {
+/* ul {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 a {
   text-decoration: none;
@@ -159,16 +155,4 @@ h2 {
 h4,
 h5 {
   margin-top: 1em;
-}
-
-p {
-  display: flex;
-  align-items: flex-start;
-  width: 90%;
-}
-
-.trivia .space-missions {
-  display: inline-flex;
-  list-style-type: disc;
-  margin: 0;
 }
