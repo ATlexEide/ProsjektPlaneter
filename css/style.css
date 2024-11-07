@@ -15,10 +15,30 @@ html {
   background: url(../assets/images/background/pexels-apasaric-1694000.jpg)
     no-repeat center center fixed;
   background-size: cover;
-  color: hsla(347, 15%, 68%, 1);
+  color: hsla(266, 53%, 94%, 1);
 }
 
 /* Header and Nav Bar */
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr auto; /* Automatically adjust rows */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Heading styling */
+.grid-container h1 {
+  align-self: center; /* Center heading vertically */
+  margin: 0;
+}
+.bottom-paragraph {
+  align-self: end; /* Position paragraph at the bottom */
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -112,23 +132,25 @@ article {
   align-items: center;
   justify-content: center;
   margin-inline: auto;
+  margin: 10px;
   font-size: 0.8rem;
   min-height: 100svh;
 }
 
 /* Headings */
 
+h1 {
+  font-size: 2.5rem;
+  color: hsl(233deg 82.96% 84.4%);
+}
+
 h2 {
   font-size: 3rem;
-  color: hsla(266, 53%, 94%, 1);
-  letter-spacing: 0.2em;
+  color: hsl(233deg 82.96% 84.4%);
+  letter-spacing: 0.1em;
 }
 
 h4,
 h5 {
   margin-top: 1em;
-}
-
-p {
-  width: 90%;
 }
