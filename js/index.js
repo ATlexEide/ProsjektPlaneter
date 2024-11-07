@@ -89,16 +89,28 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 function openMenu() {
-  menu.removeAttribute("hidden");
-  menu.classList.add("reveal-nav");
-  icon.classList.remove("fa-bars");
-  icon.classList.add("fa-xmark");
+  icon.classList.add("toggle");
+  menu.onanimationend = () => {
+    icon.classList.remove("toggle");
+    menu.classList.remove("reveal");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+  };
+  menu.classList.add("reveal");
+  menu.classList.remove("hide");
   document.body.classList.add("noscroll");
+  menu.removeAttribute("hidden");
 }
 function closeMenu() {
-  menu.setAttribute("hidden", true);
-  menu.classList.remove("reveal-nav");
-  icon.classList.remove("fa-xmark");
-  icon.classList.add("fa-bars");
+  icon.classList.add("toggle");
+  menu.onanimationend = () => {
+    icon.classList.remove("toggle");
+
+    menu.classList.remove("hide");
+    menu.setAttribute("hidden", true);
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+  };
+  menu.classList.add("hide");
   document.body.classList.remove("noscroll");
 }
