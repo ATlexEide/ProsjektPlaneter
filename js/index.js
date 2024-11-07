@@ -90,12 +90,14 @@ toggleBtn.addEventListener("click", () => {
 });
 function openMenu() {
   menu.removeAttribute("hidden");
+  menu.classList.add("reveal-nav");
   icon.classList.remove("fa-bars");
   icon.classList.add("fa-xmark");
   document.body.classList.add("noscroll");
 }
 function closeMenu() {
   menu.setAttribute("hidden", true);
+  menu.classList.remove("reveal-nav");
   icon.classList.remove("fa-xmark");
   icon.classList.add("fa-bars");
   document.body.classList.remove("noscroll");
