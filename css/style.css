@@ -146,11 +146,10 @@ label {
   font-weight: 500;
   font-size: 125%;
 }
-<<<<<<< HEAD
->>>>>>> a361f004ca6a1638ffddb079745c2f48f85a5520
-=======
->>>>>>> 613ff59a2dd4b5e8bf7f8bc2f656895619c73524
-a {
+<<<<<<<
+  HEAD>>>>>>>a361f004ca6a1638ffddb079745c2f48f85a5520
+  =======>>>>>>>613ff59a2dd4b5e8bf7f8bc2f656895619c73524
+  a {
   text-decoration: none;
   color: inherit;
 }
@@ -199,4 +198,39 @@ h2 {
 h4,
 h5 {
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 500px) {
+  article {
+    min-height: 100svh;
+    display: grid;
+    font-size: 0.8rem;
+    /* grid-template-columns: repeat(2, 1fr);  */
+    /* grid-template-rows: repeat(4, 1fr); */
+    gap: 10px; /* Gap between grid items */
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "two four"
+      "three four"
+      "one four"
+      "one four";
+    margin-inline: auto;
+  }
+
+  h2.planet-name {
+    grid-area: two;
+  }
+
+  h3.planet-position {
+    grid-area: three;
+  }
+
+  figure {
+    grid-area: one;
+  }
+
+  section.information {
+    grid-area: four;
+  }
 }
