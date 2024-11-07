@@ -74,6 +74,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 #planet-link-menu[hidden] {
   display: none;
@@ -125,9 +126,6 @@ html {
 body {
   scroll-behavior: smooth;
   min-height: 100svh;
-}
-ul {
-  padding: 0 20px;
 }
 label {
   font-weight: 500;
