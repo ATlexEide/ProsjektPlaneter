@@ -197,6 +197,13 @@ h5 {
     flex-direction: row-reverse;
     height: var(--header-height);
   }
+  li {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+  li:hover {
+    opacity: 1;
+  }
   #planet-link-menu {
     position: relative;
     right: 5em;
