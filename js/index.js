@@ -40,24 +40,25 @@ data.forEach((planet) => {
     <div class="trivia" id="trivia-${planet.id}">
       <h4 class="trivia-header">Trivia</h4>
       <p>Comparison: ${planet.comparisons}</p>
-      <p>Fun fact: ${planet.trivia}</p>
-    </div>
+      <p class="fun-fact">Fun fact: ${planet.trivia}</p>
+      </div>
+    <div class="space-missions" id="space-missions-${planet.id}">
+    
   </section>
   `;
   ////////
   // Add card to main container
   main.appendChild(article);
-  const trivia = document.getElementById(`trivia-${planet.id}`);
+  const missions = document.getElementById(`space-missions-${planet.id}`);
   const spaceMissions = planet.history.space_missions;
   ////////
   // If the list for space missions to the planet
   // has any info, make a list item and add to trivia section
   if (spaceMissions.length > 0) {
-    const label = document.createElement("label");
-    label.for = `space-missions-${planet.id}`;
-    label.classList.add("space-missions-label");
-    label.textContent = "Missions:";
-    trivia.appendChild(label);
+    const h4 = document.createElement("h4");
+    h4.classList.add("space-missions-header");
+    h4.textContent = "Missions:";
+    missions.appendChild(h4);
     const ul = document.createElement("ul");
     ul.classList.add("space-missions");
     ul.id = `space-missions-${planet.id}`;
@@ -66,7 +67,7 @@ data.forEach((planet) => {
       li.textContent = mission;
       ul.appendChild(li);
     });
-    trivia.appendChild(ul);
+    missions.appendChild(ul);
   }
 });
 
