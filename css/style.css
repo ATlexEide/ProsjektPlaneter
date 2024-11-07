@@ -94,17 +94,21 @@ html {
     scroll-behavior: auto;
   }
 }
-
+/* .fun-fact {
+  padding-bottom: 10px;
+} */
 body {
   scroll-snap-type: y mandatory; /* Skal egentlig spappe til neste div ved scrolling */
   scroll-behavior: smooth;
   min-height: 100svh;
 }
 ul {
-  display: flex;
-  justify-content: space-between;
+  padding: 0 20px;
 }
-
+label {
+  font-weight: 500;
+  font-size: 125%;
+}
 a {
   text-decoration: none;
   color: inherit;
