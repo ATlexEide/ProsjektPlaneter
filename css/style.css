@@ -189,8 +189,10 @@ h5 {
   }
 }
 .reveal {
-  background-color: red;
   animation: reveal 1s 1;
+}
+.hide {
+  animation: reverse reveal 0.5s 1;
 }
 @media only screen and (min-width: 600px) {
   nav {

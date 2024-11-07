@@ -89,21 +89,20 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 function openMenu() {
-  menu.removeAttribute("hidden");
+  menu.onanimationend = () => menu.classList.remove("reveal");
+  menu.classList.add("reveal");
+  menu.classList.remove("hide");
   icon.classList.remove("fa-bars");
   icon.classList.add("fa-xmark");
   document.body.classList.add("noscroll");
-  menu.classList.add("reveal");
-  menu.on(
-    "animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
-    function () {
-      menu.removeClass("reveal");
-    }
-  );
+  menu.removeAttribute("hidden");
 }
 function closeMenu() {
-  menu.setAttribute("hidden", true);
-  menu.classList.remove("reveal-nav");
+  menu.onanimationend = () => {
+    menu.classList.remove("hide");
+    menu.setAttribute("hidden", true);
+  };
+  menu.classList.add("hide");
   icon.classList.remove("fa-xmark");
   icon.classList.add("fa-bars");
   document.body.classList.remove("noscroll");
