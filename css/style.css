@@ -179,20 +179,41 @@ h5 {
     scroll-behavior: auto;
   }
 }
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4);
+  }
+}
+@keyframes toggle {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+  }
+  50% {
+  }
+  to {
+    scale: 0.5;
+    opacity: 0;
+    rotate: 375deg;
+  }
+}
+.reveal {
+  animation: reveal 1s 1;
+}
+.hide {
+  animation: reverse reveal 0.5s 1;
+}
+.toggle {
+  animation: toggle 1s 1;
+}
 @media only screen and (min-width: 600px) {
-  .reveal-nav {
-    animation-name: reveal;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-  }
-  @keyframes reveal {
-    from {
-      transform: translateZ(-100px);
-    }
-    to {
-      transform: translateZ(0);
-    }
-  }
   nav {
     flex-direction: row-reverse;
     height: var(--header-height);
