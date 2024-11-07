@@ -97,29 +97,10 @@ main {
   animation: levitate 3s ease-in-out infinite;
 }
 
-@keyframes levitate {
-  0%,
-  100% {
-    z-index: -10;
-    transform: translateY(0px);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-  }
-  50% {
-    z-index: -10;
-    transform: translateY(-10px);
-    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4);
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion) {
-  html {
-    scroll-behavior: auto;
-  }
-}
 /* .fun-fact {
   padding-bottom: 10px;
 } */
@@ -175,4 +156,57 @@ h2 {
 h4,
 h5 {
   margin-top: 1em;
+}
+@keyframes levitate {
+  0%,
+  100% {
+    z-index: -10;
+    transform: translateY(0px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    z-index: -10;
+    transform: translateY(-10px);
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .reveal-nav {
+    animation-name: reveal;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+  }
+  @keyframes reveal {
+    from {
+      transform: translateZ(-100px);
+    }
+    to {
+      transform: translateZ(0);
+    }
+  }
+  nav {
+    flex-direction: row-reverse;
+    height: var(--header-height);
+  }
+  #planet-link-menu {
+    position: relative;
+    right: 5em;
+    gap: 2em;
+    height: var(--header-height);
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+  }
+  #planet-link-menu:active {
+    animation: reveal-nav-desktop 1s;
+  }
 }
