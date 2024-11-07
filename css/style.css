@@ -55,6 +55,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.nav-img {
+  height: 40px;
+}
 #hamburger-menu-toggle {
   z-index: 1;
   background: none;
@@ -215,13 +218,20 @@ h5 {
     flex-direction: row-reverse;
     height: var(--header-height);
   }
+  li {
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+  li:hover {
+    opacity: 1;
+  }
   #planet-link-menu {
     position: relative;
     right: 5em;
     gap: 2em;
     height: var(--header-height);
     width: fit-content;
-    background-color: rgba(0, 0, 0, 1);
+    background: none;
     display: flex;
     justify-content: end;
     align-items: center;
