@@ -56,7 +56,7 @@ nav {
   align-items: center;
 }
 #hamburger-menu-toggle {
-  z-index: 2;
+  z-index: 1;
   background: none;
   border: none;
   font-size: 2em;
@@ -65,21 +65,18 @@ nav {
   color: white;
 }
 #planet-link-menu {
-  /* scroll-behavior: l; */
   top: 0;
   right: 0;
   position: fixed;
-  width: 30vw;
+  width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
-  /* align-self: center; */
   justify-content: space-evenly;
-  transform: translateX();
+  align-items: center;
 }
 #planet-link-menu[hidden] {
-  transform: translateX();
   display: none;
 }
 .noscroll {
@@ -103,10 +100,12 @@ main {
 @keyframes levitate {
   0%,
   100% {
+    z-index: -10;
     transform: translateY(0px);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   }
   50% {
+    z-index: -10;
     transform: translateY(-10px);
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4);
   }
@@ -125,22 +124,8 @@ html {
   padding-bottom: 10px;
 } */
 body {
-  scroll-snap-type: y mandatory; /* Skal egentlig spappe til neste div ved scrolling */
   scroll-behavior: smooth;
   min-height: 100svh;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ul {
-  display: flex;
-  justify-content: space-between;
-} */
-
-=======
-=======
->>>>>>> 613ff59a2dd4b5e8bf7f8bc2f656895619c73524
-ul {
-  padding: 0 20px;
 }
 label {
   font-weight: 500;
@@ -158,19 +143,14 @@ label {
   text-decoration: none;
   color: inherit;
 }
-
-.nav-icon {
-  width: auto; /* Set ønskja breidde */
-  height: 50px; /* Beheld proporsjonane */
-}
-
-img {
+/* img {
   max-height: 15rem;
   width: auto;
   padding: 2em 0em 2em 0em;
-}
+} */
 
 article {
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
