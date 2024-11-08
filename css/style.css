@@ -237,6 +237,9 @@ h5 {
     opacity: 0;
     scale: 10;
   }
+  100% {
+    opacity: 0;
+  }
 }
 .reveal {
   animation: reveal 1s 1;
