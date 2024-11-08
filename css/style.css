@@ -20,11 +20,17 @@ html {
 
 /* Header and Nav Bar */
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 1fr auto; /* Automatically adjust rows */
-  height: 100vh; /* Full viewport height */
-  text-align: center; /* Center text horizontally */
+#home {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  height: 100svh; /* Full viewport height */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10% 0;
+  animation: home-fade 1;
+  animation-timeline: scroll(root);
 }
 
 /* Heading styling */
@@ -32,8 +38,7 @@ html {
   align-self: center; /* Center heading vertically */
   margin: 0;
 }
-.bottom-paragraph {
-  align-self: end; /* Position paragraph at the bottom */
+.attribution {
   margin: 10px;
   margin-bottom: 20px;
   font-size: 0.7rem;
@@ -68,6 +73,7 @@ nav {
   color: white;
 }
 #planet-link-menu {
+  z-index: 10;
   top: 0;
   right: 0;
   position: fixed;
@@ -91,11 +97,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  animation: fade 1;
-  animation-timeline: ;
 }
-
 .planet-image {
   height: 200px;
   border-radius: 10px;
@@ -207,12 +209,22 @@ h5 {
     rotate: 375deg;
   }
 }
-@keyframes main-fade {
-  from {
+@keyframes home-fade {
+  0% {
     opacity: 1;
+    scale: 1;
   }
-  to {
+  5% {
+    opacity: 0.5;
+    padding: 17%;
+  }
+  10% {
+    padding: 20%;
     opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    scale: 10;
   }
 }
 .reveal {
