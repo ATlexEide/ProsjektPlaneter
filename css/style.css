@@ -176,3 +176,43 @@ h4,
 h5 {
   margin-top: 1em;
 }
+
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  article {
+    min-height: 100svh;
+    max-width: 70%;
+    display: grid;
+    font-size: 1rem;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-areas:
+      "planet-name info"
+      "planet-position info"
+      "image info";
+  }
+
+  h2.planet-name {
+    grid-area: planet-name;
+    align-self: end;
+  }
+
+  h3.planet-position {
+    grid-area: planet-position;
+    align-self: start;
+    align-content: center;
+  }
+
+  figure {
+    grid-area: image;
+    align-self: self-start;
+  }
+
+  section.information {
+    grid-area: info;
+  }
+}
