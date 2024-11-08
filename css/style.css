@@ -115,7 +115,10 @@ label {
   font-weight: 500;
   font-size: 125%;
 }
-a {
+<<<<<<<
+  HEAD>>>>>>>a361f004ca6a1638ffddb079745c2f48f85a5520
+  =======>>>>>>>613ff59a2dd4b5e8bf7f8bc2f656895619c73524
+  a {
   text-decoration: none;
   color: inherit;
 }
@@ -239,5 +242,45 @@ h5 {
   }
   #planet-link-menu:active {
     animation: reveal-nav-desktop 1s;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  article {
+    min-height: 100svh;
+    max-width: 70%;
+    display: grid;
+    font-size: 1rem;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-areas:
+      "planet-name info"
+      "planet-position info"
+      "image info";
+  }
+
+  h2.planet-name {
+    grid-area: planet-name;
+    align-self: end;
+  }
+
+  h3.planet-position {
+    grid-area: planet-position;
+    align-self: start;
+    align-content: center;
+  }
+
+  figure {
+    grid-area: image;
+    align-self: self-start;
+  }
+
+  section.information {
+    grid-area: info;
   }
 }
