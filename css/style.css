@@ -20,11 +20,17 @@ html {
 
 /* Header and Nav Bar */
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 1fr auto; /* Automatically adjust rows */
-  height: 100vh; /* Full viewport height */
-  text-align: center; /* Center text horizontally */
+#home {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  height: 100svh; /* Full viewport height */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10% 0;
+  animation: home-fade 1;
+  animation-timeline: scroll(root);
 }
 
 /* Heading styling */
@@ -32,11 +38,10 @@ html {
   align-self: center; /* Center heading vertically */
   margin: 0;
 }
-.bottom-paragraph {
-  align-self: end; /* Position paragraph at the bottom */
+.attribution {
   margin: 10px;
   margin-bottom: 20px;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 header {
@@ -68,6 +73,7 @@ nav {
   color: white;
 }
 #planet-link-menu {
+  z-index: 10;
   top: 0;
   right: 0;
   position: fixed;
@@ -92,7 +98,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .planet-image {
   height: 200px;
   border-radius: 10px;
@@ -115,10 +120,7 @@ label {
   font-weight: 500;
   font-size: 125%;
 }
-<<<<<<<
-  HEAD>>>>>>>a361f004ca6a1638ffddb079745c2f48f85a5520
-  =======>>>>>>>613ff59a2dd4b5e8bf7f8bc2f656895619c73524
-  a {
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -205,6 +207,24 @@ h5 {
     scale: 0.5;
     opacity: 0;
     rotate: 375deg;
+  }
+}
+@keyframes home-fade {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+  5% {
+    opacity: 0.5;
+    padding: 17%;
+  }
+  10% {
+    padding: 20%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    scale: 10;
   }
 }
 .reveal {
