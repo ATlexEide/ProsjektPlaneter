@@ -181,36 +181,41 @@ h5 {
 }
 
 @media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+
   article {
     min-height: 100svh;
+    max-width: 70%;
     display: grid;
-    font-size: 0.8rem;
-    /* grid-template-columns: repeat(2, 1fr);  */
-    /* grid-template-rows: repeat(4, 1fr); */
-    gap: 10px; /* Gap between grid items */
+    font-size: 1rem;
+    gap: 10px;
     padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     grid-template-areas:
-      "two four"
-      "three four"
-      "one four"
-      "one four";
-    margin-inline: auto;
+      "planet-name info"
+      "planet-position info"
+      "image info";
   }
 
   h2.planet-name {
-    grid-area: two;
+    grid-area: planet-name;
+    align-self: end;
   }
 
   h3.planet-position {
-    grid-area: three;
+    grid-area: planet-position;
+    align-self: start;
+    align-content: center;
   }
 
   figure {
-    grid-area: one;
+    grid-area: image;
+    align-self: self-start;
   }
 
   section.information {
-    grid-area: four;
+    grid-area: info;
   }
 }
