@@ -232,8 +232,8 @@ h5 {
     scale: 1;
   }
   5% {
-    opacity: 0.5;
-    padding: 17%;
+    opacity: 0;
+    padding: 22%;
   }
   10% {
     padding: 20%;
