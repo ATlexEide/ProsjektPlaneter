@@ -350,11 +350,13 @@ h5 {
   }
   @keyframes slide {
     from {
+      scale: 1;
       rotate: 0deg;
       top: -6450px;
       left: -2700px;
     }
     to {
+      scale: 0.2;
       rotate: 100deg;
       top: -5050px;
       left: 1500px;
