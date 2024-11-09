@@ -331,56 +331,33 @@ h5 {
   }
   @keyframes floatUp {
     from {
-      transform: translateY(0%);
+      top: -500px;
+      left: -700px;
     }
-    30% {
-      transform: translateY(1000%);
-    }
-  }
-  @keyframes iss {
-    0% {
-      top: 25%;
-      left: -10%;
-      opacity: 0;
-    }
-    19% {
-      top: 25%;
-      left: -10%;
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-      top: 50%;
-      left: 0%;
-    }
-    90% {
-      opacity: 1;
-      top: 60%;
-      left: 10%;
-      scale: 1;
-      transform: translateY(2000%);
+    to {
+      top: -5000px;
+      left: -2000px;
     }
   }
 
   #space-shuttle {
-    top: 80%;
-    left: 0;
-    z-index: 2;
-    position: absolute;
-
-    animation: 1ms floatUp linear;
+    transform: scaleX(1);
+    position: relative;
+    z-index: 1;
+    animation: floatUp 1s 1;
+    /* animation: 1s reverse floatUp linear; */
     animation-timeline: scroll(root);
   }
   @keyframes slide {
     from {
       rotate: 0deg;
-      top: -7250px;
-      left: -1000px;
+      top: -6450px;
+      left: -2700px;
     }
     to {
       rotate: 100deg;
-      top: -4050px;
-      left: 2000px;
+      top: -5050px;
+      left: 1500px;
     }
   }
   #earth > .information {
@@ -389,8 +366,6 @@ h5 {
   }
 
   #iss {
-    top: -5550px;
-    left: 100px;
     position: relative;
     z-index: 1;
     animation: slide 1s 1;
