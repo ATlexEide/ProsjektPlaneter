@@ -17,6 +17,11 @@ html {
   background-size: cover;
   color: hsla(266, 53%, 94%, 1);
 }
+body {
+  overflow-x: hidden;
+  position: relative;
+  z-index: -1;
+}
 
 /* Header and Nav Bar */
 #logo {
@@ -55,6 +60,7 @@ html {
 }
 
 header {
+  z-index: 2;
   margin-top: 2em;
   height: var(--header-height);
   padding: 0 3em;
@@ -126,6 +132,7 @@ html {
 body {
   scroll-behavior: smooth;
   min-height: 100svh;
+  scroll-timeline: --body y;
 }
 label {
   font-weight: 500;
@@ -147,7 +154,6 @@ a {
 } */
 
 article {
-  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,8 +232,8 @@ h5 {
     scale: 1;
   }
   5% {
-    opacity: 0.5;
-    padding: 17%;
+    opacity: 0;
+    padding: 22%;
   }
   10% {
     padding: 20%;
@@ -316,5 +322,67 @@ h5 {
 
   section.information {
     grid-area: info;
+  }
+  #jupiter > .information > .facts {
+    position: relative;
+    z-index: 0;
+  }
+  #jupiter > .information > .unique-features,
+  #jupiter > .information > .trivia {
+    position: relative;
+    z-index: 2;
+  }
+  .stars1 {
+    animation: 1ms starScroll linear;
+    animation-timeline: scroll(root);
+    bottom: 0;
+    position: fixed;
+  }
+  @keyframes floatUp {
+    from {
+      scale: 0.7;
+      top: -7000px;
+      left: 2800px;
+    }
+    to {
+      scale: 1;
+      top: -600px;
+      left: -700px;
+    }
+  }
+
+  #space-shuttle {
+    transform: scaleX(-1);
+
+    position: relative;
+    z-index: 1;
+    animation: 1s floatUp linear;
+    animation-timeline: scroll(root);
+  }
+  @keyframes slide {
+    from {
+      scale: 1;
+      rotate: 0deg;
+      top: -6450px;
+      left: -2700px;
+    }
+    to {
+      scale: 0.2;
+      rotate: 100deg;
+      top: -5050px;
+      left: 1500px;
+    }
+  }
+  #earth > .information {
+    position: relative;
+    z-index: 6;
+  }
+
+  #iss {
+    position: relative;
+    z-index: 1;
+    animation: slide 1s 1;
+    /* animation: 1s reverse floatUp linear; */
+    animation-timeline: scroll(root);
   }
 }
