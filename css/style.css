@@ -331,21 +331,21 @@ h5 {
   }
   @keyframes floatUp {
     from {
-      top: -500px;
-      left: -700px;
+      top: -6000px;
+      left: 2000px;
     }
     to {
-      top: -5000px;
-      left: -2000px;
+      top: -2000px;
+      left: -100px;
     }
   }
 
   #space-shuttle {
-    transform: scaleX(1);
+    transform: scaleX(-1);
+
     position: relative;
     z-index: 1;
-    animation: floatUp 1s 1;
-    /* animation: 1s reverse floatUp linear; */
+    animation: 1s floatUp linear;
     animation-timeline: scroll(root);
   }
   @keyframes slide {
