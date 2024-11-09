@@ -332,12 +332,7 @@ h5 {
     position: relative;
     z-index: 2;
   }
-  .stars1 {
-    animation: 1ms starScroll linear;
-    animation-timeline: scroll(root);
-    bottom: 0;
-    position: fixed;
-  }
+
   @keyframes floatUp {
     from {
       scale: 0.7;
