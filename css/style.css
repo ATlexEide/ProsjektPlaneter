@@ -131,6 +131,7 @@ html {
 body {
   scroll-behavior: smooth;
   min-height: 100svh;
+  scroll-timeline: --body y;
 }
 label {
   font-weight: 500;
@@ -330,31 +331,70 @@ h5 {
   }
   @keyframes floatUp {
     from {
-      width: 200px;
       transform: translateY(0%);
     }
     30% {
-      width: 6000px;
-      transform: translateY(-1000%);
+      transform: translateY(1000%);
     }
   }
-  @keyframes shuttleFloat {
-    from {
-      transform: translateX(100%);
+  @keyframes iss {
+    0% {
+      top: 25%;
+      left: -10%;
+      opacity: 0;
     }
-    to {
-      transform: translateX(-220%);
+    19% {
+      top: 25%;
+      left: -10%;
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      top: 50%;
+      left: 0%;
+    }
+    90% {
+      opacity: 1;
+      top: 60%;
+      left: 10%;
+      scale: 1;
+      transform: translateY(2000%);
     }
   }
 
   #space-shuttle {
-    top: 30%;
-    left: -10%;
+    top: 80%;
+    left: 0;
     z-index: 2;
     position: absolute;
-    scale: 0.5;
 
     animation: 1ms floatUp linear;
+    animation-timeline: scroll(root);
+  }
+  @keyframes slide {
+    from {
+      rotate: 0deg;
+      top: -7250px;
+      left: -1000px;
+    }
+    to {
+      rotate: 100deg;
+      top: -4050px;
+      left: 2000px;
+    }
+  }
+  #earth > .information {
+    position: relative;
+    z-index: 6;
+  }
+
+  #iss {
+    top: -5550px;
+    left: 100px;
+    position: relative;
+    z-index: 1;
+    animation: slide 1s 1;
+    /* animation: 1s reverse floatUp linear; */
     animation-timeline: scroll(root);
   }
 }
