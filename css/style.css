@@ -337,8 +337,8 @@ h5 {
   @keyframes floatUp {
     from {
       scale: 0.7;
-      top: -7000px;
-      left: 2800px;
+      top: -4000px;
+      left: 2200px;
     }
     to {
       scale: 1;
