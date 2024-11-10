@@ -140,6 +140,8 @@ label {
   font-size: 125%;
 }
 a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: inherit;
 }
