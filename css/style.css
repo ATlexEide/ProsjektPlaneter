@@ -55,6 +55,7 @@ body {
   margin: 0;
 }
 .attribution {
+  text-align: center;
   margin: 10px;
   margin-bottom: 20px;
   font-size: 1rem;
@@ -81,6 +82,11 @@ nav {
 .nav-img {
   height: 40px;
 }
+.nav-figure {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
 #hamburger-menu-toggle {
   z-index: 2;
   background: none;
@@ -89,6 +95,11 @@ nav {
 }
 .fa-solid {
   color: white;
+}
+.planet-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 #planet-link-menu {
   z-index: 1;
@@ -100,7 +111,8 @@ nav {
   background-color: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2em;
   align-items: center;
 }
 #planet-link-menu[hidden] {
@@ -136,12 +148,18 @@ label {
   font-size: 125%;
 }
 a {
-  display: flex;
-  align-items: center;
   text-decoration: none;
   color: inherit;
 }
-
+.planet-a {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-planet-name {
+  width: 50%;
+}
 .scroll-to-top {
   text-decoration: none;
   color: inherit;
