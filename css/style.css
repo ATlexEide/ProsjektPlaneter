@@ -21,6 +21,9 @@ body {
   overflow-x: hidden;
   position: relative;
   z-index: -1;
+  scroll-behavior: smooth;
+  min-height: 100svh;
+  scroll-timeline: --body y;
 }
 
 /* Header and Nav Bar */
@@ -43,9 +46,7 @@ body {
   height: 100svh; /* Full viewport height */
   justify-content: space-between;
   align-items: center;
-  padding: 10% 0;
-  animation: home-fade 1;
-  animation-timeline: scroll(root);
+  padding: 90% 0;
 }
 
 /* Heading styling */
@@ -54,6 +55,7 @@ body {
   margin: 0;
 }
 .attribution {
+  text-align: center;
   margin: 10px;
   margin-bottom: 20px;
   font-size: 1rem;
@@ -63,7 +65,7 @@ header {
   z-index: 2;
   margin-top: 2em;
   height: var(--header-height);
-  padding: 0 3em;
+  padding: 0 2em;
   position: fixed;
   width: 100vw;
   display: flex;
@@ -80,8 +82,13 @@ nav {
 .nav-img {
   height: 40px;
 }
+.nav-figure {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
 #hamburger-menu-toggle {
-  z-index: 1;
+  z-index: 2;
   background: none;
   border: none;
   font-size: 2em;
@@ -89,8 +96,13 @@ nav {
 .fa-solid {
   color: white;
 }
+.planet-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 #planet-link-menu {
-  z-index: 10;
+  z-index: 1;
   top: 0;
   right: 0;
   position: fixed;
@@ -99,7 +111,8 @@ nav {
   background-color: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2em;
   align-items: center;
 }
 #planet-link-menu[hidden] {
@@ -110,13 +123,14 @@ nav {
 }
 
 main {
+  /* margin-bottom: -100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .planet-image {
-  height: 200px;
+  height: 10vh;
   border-radius: 10px;
   margin: 50px auto;
   animation: levitate 3s ease-in-out infinite;
@@ -129,11 +143,6 @@ html {
 /* .fun-fact {
   padding-bottom: 10px;
 } */
-body {
-  scroll-behavior: smooth;
-  min-height: 100svh;
-  scroll-timeline: --body y;
-}
 label {
   font-weight: 500;
   font-size: 125%;
@@ -142,7 +151,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+.planet-a {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-planet-name {
+  width: 50%;
+}
 .scroll-to-top {
   text-decoration: none;
   color: inherit;
@@ -162,7 +179,6 @@ article {
   margin: 10px;
   font-size: 0.8rem;
   min-height: 100svh;
-  margin-bottom: 100px;
 }
 
 /* Headings */
@@ -284,12 +300,25 @@ h5 {
     animation: reveal-nav-desktop 1s;
   }
 }
+#iss {
+  display: none;
+}
+#space-shuttle {
+  display: none;
+}
 
 @media only screen and (min-width: 500px) {
+  .planet-a {
+    gap: 1em;
+  }
   h1 {
     font-size: 4rem;
   }
-
+  #home {
+    padding: 10% 0;
+    animation: home-fade 1;
+    animation-timeline: scroll(root);
+  }
   article {
     min-height: 100svh;
     max-width: 70%;
@@ -304,22 +333,30 @@ h5 {
       "image info";
   }
 
-  h2.planet-name {
+  .planet-name {
     grid-area: planet-name;
     align-self: end;
   }
 
-  h3.planet-position {
+  .planet-position {
     grid-area: planet-position;
-    align-self: start;
     align-content: center;
   }
 
   figure {
     grid-area: image;
     align-self: self-start;
+    display: flex;
+    justify-content: center;
   }
-
+  .planet-name,
+  .planet-position {
+    display: flex;
+    justify-content: center;
+  }
+  .planet-image {
+    height: 40vh;
+  }
   section.information {
     grid-area: info;
   }
@@ -332,17 +369,12 @@ h5 {
     position: relative;
     z-index: 2;
   }
-  .stars1 {
-    animation: 1ms starScroll linear;
-    animation-timeline: scroll(root);
-    bottom: 0;
-    position: fixed;
-  }
+
   @keyframes floatUp {
     from {
       scale: 0.7;
-      top: -7000px;
-      left: 2800px;
+      top: -3500px;
+      left: 2200px;
     }
     to {
       scale: 1;
@@ -352,6 +384,7 @@ h5 {
   }
 
   #space-shuttle {
+    display: block;
     transform: scaleX(-1);
 
     position: relative;
@@ -363,8 +396,8 @@ h5 {
     from {
       scale: 1;
       rotate: 0deg;
-      top: -6450px;
-      left: -2700px;
+      top: -1050px;
+      left: -3000px;
     }
     to {
       scale: 0.2;
@@ -379,10 +412,15 @@ h5 {
   }
 
   #iss {
+    display: block;
+
     position: relative;
     z-index: 1;
     animation: slide 1s 1;
     /* animation: 1s reverse floatUp linear; */
     animation-timeline: scroll(root);
+  }
+  #neptune {
+    margin-bottom: -100%;
   }
 }

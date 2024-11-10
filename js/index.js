@@ -89,28 +89,28 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 function openMenu() {
-  icon.classList.add("toggle");
+  // icon.classList.add("toggle");
   menu.onanimationend = () => {
-    icon.classList.remove("toggle");
+    // icon.classList.remove("toggle");
     menu.classList.remove("reveal");
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-xmark");
   };
+  icon.classList.remove("fa-bars");
+  icon.classList.add("fa-xmark");
   menu.classList.add("reveal");
   menu.classList.remove("hide");
   if (window.innerWidth < 600) document.body.classList.add("noscroll");
   menu.removeAttribute("hidden");
 }
 function closeMenu() {
-  icon.classList.add("toggle");
+  // icon.classList.add("toggle");
   menu.onanimationend = () => {
-    icon.classList.remove("toggle");
+    // icon.classList.remove("toggle");
 
     menu.classList.remove("hide");
     menu.setAttribute("hidden", true);
-    icon.classList.remove("fa-xmark");
-    icon.classList.add("fa-bars");
   };
+  icon.classList.remove("fa-xmark");
+  icon.classList.add("fa-bars");
   menu.classList.add("hide");
   if (document.body.classList.contains("noscroll"))
     document.body.classList.remove("noscroll");
