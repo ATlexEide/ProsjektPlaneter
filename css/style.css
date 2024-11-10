@@ -308,6 +308,9 @@ h5 {
 }
 
 @media only screen and (min-width: 500px) {
+  .planet-a {
+    gap: 1em;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -370,7 +373,7 @@ h5 {
   @keyframes floatUp {
     from {
       scale: 0.7;
-      top: -4000px;
+      top: -3500px;
       left: 2200px;
     }
     to {
@@ -393,7 +396,7 @@ h5 {
     from {
       scale: 1;
       rotate: 0deg;
-      top: -2050px;
+      top: -1050px;
       left: -3000px;
     }
     to {
