@@ -113,7 +113,7 @@ nav {
 }
 
 main {
-  margin-bottom: -100%;
+  /* margin-bottom: -100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -359,8 +359,8 @@ h5 {
     from {
       scale: 1;
       rotate: 0deg;
-      top: -6450px;
-      left: -2700px;
+      top: -2050px;
+      left: -3000px;
     }
     to {
       scale: 0.2;
