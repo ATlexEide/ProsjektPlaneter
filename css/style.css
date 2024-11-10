@@ -64,7 +64,7 @@ header {
   z-index: 2;
   margin-top: 2em;
   height: var(--header-height);
-  padding: 0 3em;
+  padding: 0 2em;
   position: fixed;
   width: 100vw;
   display: flex;
@@ -82,7 +82,7 @@ nav {
   height: 40px;
 }
 #hamburger-menu-toggle {
-  z-index: 1;
+  z-index: 2;
   background: none;
   border: none;
   font-size: 2em;
@@ -91,7 +91,7 @@ nav {
   color: white;
 }
 #planet-link-menu {
-  z-index: 10;
+  z-index: 1;
   top: 0;
   right: 0;
   position: fixed;
@@ -118,7 +118,7 @@ main {
   justify-content: center;
 }
 .planet-image {
-  height: 200px;
+  height: 10vh;
   border-radius: 10px;
   margin: 50px auto;
   animation: levitate 3s ease-in-out infinite;
@@ -334,7 +334,9 @@ h5 {
     display: flex;
     justify-content: center;
   }
-
+  .planet-image {
+    height: 40vh;
+  }
   section.information {
     grid-area: info;
   }
