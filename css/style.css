@@ -313,20 +313,26 @@ h5 {
       "image info";
   }
 
-  h2.planet-name {
+  .planet-name {
     grid-area: planet-name;
     align-self: end;
   }
 
-  h3.planet-position {
+  .planet-position {
     grid-area: planet-position;
-    align-self: start;
     align-content: center;
   }
 
   figure {
     grid-area: image;
     align-self: self-start;
+    display: flex;
+    justify-content: center;
+  }
+  .planet-name,
+  .planet-position {
+    display: flex;
+    justify-content: center;
   }
 
   section.information {
