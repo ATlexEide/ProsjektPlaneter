@@ -21,6 +21,9 @@ body {
   overflow-x: hidden;
   position: relative;
   z-index: -1;
+  scroll-behavior: smooth;
+  min-height: 100svh;
+  scroll-timeline: --body y;
 }
 
 /* Header and Nav Bar */
@@ -130,11 +133,6 @@ html {
 /* .fun-fact {
   padding-bottom: 10px;
 } */
-body {
-  scroll-behavior: smooth;
-  min-height: 100svh;
-  scroll-timeline: --body y;
-}
 label {
   font-weight: 500;
   font-size: 125%;
