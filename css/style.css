@@ -46,9 +46,7 @@ body {
   height: 100svh; /* Full viewport height */
   justify-content: space-between;
   align-items: center;
-  padding: 10% 0;
-  animation: home-fade 1;
-  animation-timeline: scroll(root);
+  padding: 90% 0;
 }
 
 /* Heading styling */
@@ -285,12 +283,22 @@ h5 {
     animation: reveal-nav-desktop 1s;
   }
 }
+#iss {
+  display: none;
+}
+#space-shuttle {
+  display: none;
+}
 
 @media only screen and (min-width: 500px) {
   h1 {
     font-size: 4rem;
   }
-
+  #home {
+    padding: 10% 0;
+    animation: home-fade 1;
+    animation-timeline: scroll(root);
+  }
   article {
     min-height: 100svh;
     max-width: 70%;
@@ -348,6 +356,7 @@ h5 {
   }
 
   #space-shuttle {
+    display: block;
     transform: scaleX(-1);
 
     position: relative;
@@ -375,10 +384,15 @@ h5 {
   }
 
   #iss {
+    display: block;
+
     position: relative;
     z-index: 1;
     animation: slide 1s 1;
     /* animation: 1s reverse floatUp linear; */
     animation-timeline: scroll(root);
+  }
+  #neptune {
+    margin-bottom: -100%;
   }
 }
